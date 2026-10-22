@@ -1,0 +1,128 @@
+{
+  "analysis_at_utc": "2026-10-22T23:24:23.500066+00:00",
+  "data_fetched_at_utc": "2026-10-22T23:24:22.576267+00:00",
+  "sampling": {
+    "quotas": {
+      "COMPLETED": 150,
+      "TERMINATED": 50,
+      "WITHDRAWN": 50,
+      "SUSPENDED": 50
+    },
+    "sort": null,
+    "ordering": "API default ordering; no explicit sort parameter",
+    "study_type": "INTERVENTIONAL",
+    "query.term": "AREA[StudyType]INTERVENTIONAL",
+    "note": "Status-stratified convenience sample. API ordering and registry contents can change between downloads. Reuse the cached snapshot to reproduce the analysis."
+  },
+  "n_total": 300,
+  "high_risk_threshold": 4,
+  "maximum_score": 9,
+  "weights": {
+    "narrow_age_window": 2,
+    "long_exclusion_list": 2,
+    "many_outcomes": 1,
+    "high_enrollment_per_site": 2,
+    "large_single_site_trial": 2
+  },
+  "groups": {
+    "COMPLETED": {
+      "n": 150,
+      "median_score": 0.0,
+      "high_risk_n": 11,
+      "high_risk_share": 0.07333333333333333,
+      "all_signals_assessable_n": 64
+    },
+    "TERMINATED_WITHDRAWN_SUSPENDED": {
+      "n": 150,
+      "median_score": 0.5,
+      "high_risk_n": 9,
+      "high_risk_share": 0.06,
+      "all_signals_assessable_n": 46
+    }
+  },
+  "individual_statuses": {
+    "COMPLETED": {
+      "n": 150,
+      "median_score": 0.0,
+      "high_risk_n": 11,
+      "high_risk_share": 0.07333333333333333,
+      "all_signals_assessable_n": 64
+    },
+    "TERMINATED": {
+      "n": 50,
+      "median_score": 0.0,
+      "high_risk_n": 3,
+      "high_risk_share": 0.06,
+      "all_signals_assessable_n": 17
+    },
+    "WITHDRAWN": {
+      "n": 50,
+      "median_score": 0.5,
+      "high_risk_n": 0,
+      "high_risk_share": 0.0,
+      "all_signals_assessable_n": 11
+    },
+    "SUSPENDED": {
+      "n": 50,
+      "median_score": 1.0,
+      "high_risk_n": 6,
+      "high_risk_share": 0.12,
+      "all_signals_assessable_n": 18
+    }
+  },
+  "comparison": {
+    "available": true,
+    "completed_n": 150,
+    "interrupted_n": 150,
+    "u_interrupted_first": 11608.0,
+    "p_value_two_sided": 0.606973200836731,
+    "method": "asymptotic, tie-corrected, continuity correction",
+    "rank_biserial_interrupted_higher": 0.031822222222222196,
+    "interpretation": "The observed separation is weak or absent by the demo's descriptive effect-size threshold, regardless of the p-value."
+  },
+  "complete_feature_sensitivity": {
+    "n": 110,
+    "groups": {
+      "COMPLETED": {
+        "n": 64,
+        "median_score": 1.0,
+        "high_risk_n": 3,
+        "high_risk_share": 0.046875,
+        "all_signals_assessable_n": 64
+      },
+      "TERMINATED_WITHDRAWN_SUSPENDED": {
+        "n": 46,
+        "median_score": 1.0,
+        "high_risk_n": 4,
+        "high_risk_share": 0.08695652173913043,
+        "all_signals_assessable_n": 46
+      }
+    },
+    "comparison": {
+      "available": true,
+      "completed_n": 64,
+      "interrupted_n": 46,
+      "u_interrupted_first": 1560.5,
+      "p_value_two_sided": 0.576373878785542,
+      "method": "asymptotic, tie-corrected, continuity correction",
+      "rank_biserial_interrupted_higher": 0.060122282608695565,
+      "interpretation": "The observed separation is weak or absent by the demo's descriptive effect-size threshold, regardless of the p-value."
+    }
+  },
+  "eligibility_parse_counts": {
+    "both_headings": 290,
+    "unrecognized_headings": 5,
+    "partial_headings": 5
+  },
+  "missing_feature_counts": {
+    "enrollment": 4,
+    "number_of_sites": 31,
+    "age_window_years": 151,
+    "inclusion_count": 5,
+    "exclusion_count": 11,
+    "primary_outcome_count": 8,
+    "secondary_outcome_count": 67,
+    "enrollment_per_site": 35
+  },
+  "caution": "Current registry snapshots include post-baseline information. These results are exploratory associations, not prospective validation."
+}
